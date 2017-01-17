@@ -1,4 +1,4 @@
-# ![alt tag](https://raw.githubusercontent.com/lvncnt/ModernArtUI/master/app/src/main/res/mipmap-mdpi/ic_launcher.png) Watch Later
+# ![alt tag](https://raw.githubusercontent.com/lvncnt/ionic2-watch-later/master/resources/android/icon/drawable-hdpi-icon.png) Watch Later
 ----------
 This app was built using the [Ionic 2 framework](http://ionic.io/2). By consuming the [Movie Database API](https://www.themoviedb.org), it allows user to search a movie and add or remove a movie from the Watchlist.   
 
@@ -9,6 +9,9 @@ This app was built using the [Ionic 2 framework](http://ionic.io/2). By consumin
 * Filter Movies by Genre
 * Share Movie
 * Save or Remove Movie from Watchlist
+
+![alt tag](https://raw.githubusercontent.com/lvncnt/ionic2-watch-later/master/screenshots/HomePage.png)
+
 
 ## Quickstart
 
