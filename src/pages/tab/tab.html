@@ -1,0 +1,6 @@
+<ion-tabs [selectedIndex]="selectedIndex" color="google">
+  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>
+  <ion-tab [root]="tab2Root" tabTitle="Watchlist" tabIcon="star" tabBadge="{{watchlist > 0 ? watchlist : ''}}" tabBadgeStyle="light">
+  </ion-tab>
+  <ion-tab [root]="tab3Root" tabTitle="About" tabIcon="information-circle"></ion-tab>
+</ion-tabs>

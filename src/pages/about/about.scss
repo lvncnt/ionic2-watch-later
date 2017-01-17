@@ -1,0 +1,52 @@
+
+.container{
+  background-color: color($colors, dark);
+}
+.about-header {
+  padding: 16px;
+  width: 100%;
+  min-height: 150px;
+  text-align: center;
+  color: color($colors, twitter);
+}
+
+.about-header img {
+  max-width: 200px;
+  min-height: 115px;
+  margin-left: -15px;
+  padding: 25px 0 20px 0;
+}
+ 
+.about-info p {
+  font-size: 1em;
+  color: color($colors, twitter);
+  background-color: color($colors, dark);
+  text-align: left;
+}
+
+.about-info ion-list-header{
+  font-size: 1.5em;
+  color: color($colors, twitter);
+}
+
+.about-info ion-icon {
+  color: color($colors, primary);
+  width: 20px;
+}
+ 
+.md,
+.wp {
+  .about-info [text-right] {
+    margin-right: 0;
+  }
+}
+
+.ios .about-info {
+  text-align: center;
+}
+
+.ios .about-info ion-icon {
+  width: auto;
+  margin-right: 10px;
+}
+ 

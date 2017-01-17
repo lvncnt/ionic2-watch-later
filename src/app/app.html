@@ -1,0 +1,24 @@
+<!-- menu -->
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar color="google">
+      <ion-title>
+        <h3><strong>Menu</strong></h3>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="outer-content" style="opacity: 0.5;">
+    <ion-list>
+      <!-- <ion-list-header></ion-list-header> -->
+      <button ion-item menuClose *ngFor="let p of utilPages" (click)="openPage(p)">
+        <ion-icon item-left [name]="p.icon"></ion-icon>
+        <strong>{{p.title}}</strong>
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- main navigation -->
+<ion-nav [root]="rootPage" #content></ion-nav>

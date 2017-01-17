@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-navbar no-border-bottom color="google">
+     <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title style="text-align: center;">Now Playing</ion-title>
+  
+   <!--
+    <ion-buttons end>
+        <button ion-button icon-only (click)="presentFilter()">
+          <ion-icon name="options" small></ion-icon>
+        </button>
+      </ion-buttons>
+    -->
+  </ion-navbar>
+
+  <ion-toolbar no-border-top color="google" *ngIf="hasSearchBar">
+    <ion-searchbar placeholder="Search" [(ngModel)]="queryText"
+     (ionInput)="doSearch()" showCancelButton (ionCancel)="onCancel()">
+    </ion-searchbar>  
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="list-content">
+  <ion-card *ngFor="let movie of movieData" (click)="goToMovieDetail(movie.id)" [hidden]="movie.hide">
+    <ion-card-content class="no-padding">
+      <ion-grid class="no-padding">
+        <ion-row responsive-sm>
+          <ion-col width-33 class="no-padding">
+            <img src="http://image.tmdb.org/t/p/w185{{movie.poster_path}}" />
+          </ion-col>
+          <ion-col>
+            <ion-list no-lines>
+              <ion-item text-wrap>
+                <h2>{{movie.title}}</h2>
+                <p>{{movie.genre.join(", ")}}</p>
+
+                <p ion-text color="twitter">
+                  <ion-icon name="calendar"></ion-icon> {{movie.release_date | date:'yyyy'}}&nbsp;&nbsp;
+                  <ion-icon *ngIf="movie.vote_average < 5" name="thumbs-down"></ion-icon>
+                  <ion-icon *ngIf="movie.vote_average >= 5" name="thumbs-up"></ion-icon>
+                  {{movie.vote_average}}
+                </p>
+                <p class="ellipsis">{{movie.overview}}</p>
+              </ion-item>
+            </ion-list>
+
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

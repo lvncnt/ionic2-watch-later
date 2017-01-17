@@ -1,0 +1,13 @@
+.list-content{
+  background-color: color($colors, light);
+}
+
+.no-padding{
+    padding: 0px;
+}
+ .ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar color="google">
+    <ion-title>{{movie.title}}</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="presentActionSheet($event)">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <img src="http://image.tmdb.org/t/p/original{{movie.poster_path}}">
+    <ion-card-content>
+      <ion-card-title>
+        {{movie.title}}
+      </ion-card-title>
+      <p><strong>Release Date: </strong>{{movie.release_date}}</p>
+      <p><strong>Runtime: </strong>{{movie.runtime}} min</p>
+      <p><strong>Overview: </strong>{{movie.overview}}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-fab right bottom (click)="share()">
+    <button ion-fab mini><ion-icon name="share" ></ion-icon></button>
+  </ion-fab>
+
+</ion-content>

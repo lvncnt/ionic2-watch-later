@@ -1,0 +1,42 @@
+<!--
+  Generated template for the MovieFilter page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">Cancel</button>
+    </ion-buttons>
+
+    <ion-title>
+      Filter Movies
+    </ion-title>
+
+    <ion-buttons end>
+      <button ion-button (click)="applyFilters()" strong>Done</button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="outer-content">
+
+  <ion-list>
+    <ion-list-header>Genre</ion-list-header>
+
+    <ion-item *ngFor="let genre of genres" [attr.genre]="genre.id">
+      <span item-left class="dot"></span>
+      <ion-label>{{genre.name}}</ion-label>
+      <ion-toggle [(ngModel)]="genre.isChecked" color="secondary"></ion-toggle>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-list>
+    <button ion-item (click)="resetFilters()" detail-none class="reset-filters">
+      Reset All Filters
+    </button>
+  </ion-list>
+
+</ion-content>
