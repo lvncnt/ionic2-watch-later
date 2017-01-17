@@ -50,14 +50,16 @@ For detailed documentation of API and how to get started on TMDb, you can read i
 For how to add the above plugins to your app using the CLI, you can read it [here](https://cordova.apache.org/docs/en/latest/guide/cli/#add-plugins).
 
 2. Add support for the android platform:
+
 ```
 ionic platform add android
 ```
+
 3. Build and run the project in emulator
+
 ```
 ionic run android
 ```
-
 
 ## Demo
 
