@@ -26,6 +26,12 @@ For detailed documentation of API and how to get started on TMDb, you can read i
 3. run `ionic serve` 
 
 ## Dependencies
+
+#### Setup the Environment Variables
+* Set `JAVA_HOME` Environment Variables to the JDK directory
+* Set `ANDROID_HOME` Environment Variables to your android SDK directory
+
+
 #### Run on an Android emulator 
 
 *npm* was used as the main package manager for the app. The following Cordova plugins are needed to run the app on Android emulators like Genymotion.
