@@ -28,8 +28,8 @@ For detailed documentation of API and how to get started on TMDb, you can read i
 ## Dependencies
 
 #### Setup the Environment Variables
-* Set `JAVA_HOME` Environment Variables to the JDK directory
-* Set `ANDROID_HOME` Environment Variables to your android SDK directory
+* Set `JAVA_HOME` Environment Variable to the JDK directory
+* Set `ANDROID_HOME` Environment Variable to your android SDK directory
 
 
 #### Run on an Android emulator 
