@@ -1,4 +1,4 @@
-# ![alt tag](https://raw.githubusercontent.com/lvncnt/ionic2-watch-later/master/resources/android/icon/drawable-hdpi-icon.png) Watch Later
+# ![alt tag](https://raw.githubusercontent.com/lvncnt/ionic2-watch-later/master/resources/android/icon/drawable-ldpi-icon.png) Watch Later
 ----------
 This app was built using the [Ionic 2 framework](http://ionic.io/2). By consuming the [Movie Database API](https://www.themoviedb.org), it allows user to search a movie and add or remove a movie from the Watchlist.   
 
